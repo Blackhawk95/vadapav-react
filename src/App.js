@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import logo from "./logo.svg"
+import pavlogo from "./vada_pav.webp"
 import "./App.css"
 
 class LambdaDemo extends Component {
@@ -22,9 +23,6 @@ class LambdaDemo extends Component {
 
     return (
       <p>
-        <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Call Lambda"}</button>
-        <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async Lambda"}</button>
-        <br />
         <span>{msg}</span>
       </p>
     )
@@ -36,9 +34,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={pavlogo} alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Vada Pav ?
           </p>
           <LambdaDemo />
         </header>
